@@ -1,6 +1,6 @@
 # OptionsPricing
 
-Module for finance options pricing models in Ruby.  Right now, only supports Black Scholes.  I plan to add more models in the future.
+Module for financial options pricing models in Ruby.  Right now, only supports [Black Scholes](http://en.wikipedia.org/wiki/Black%E2%80%93Scholes).  I plan to add more models in the future.
 
 ## Installation
 
