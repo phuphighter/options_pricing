@@ -1,6 +1,6 @@
 # OptionsPricing
 
-Module for options pricing models in Ruby.  Right now, only supports Black Scholes.  I plan to add more models in the future.
+Module for finance options pricing models in Ruby.  Right now, only supports Black Scholes.  I plan to add more models in the future.
 
 ## Installation
 
@@ -16,12 +16,7 @@ Or in your Rails app as a plugin:
     
 #### Examples
 
-put or call = 'c'
-stock price = 75.15
-strike = 80
-years to maturity = 0.15
-risk free rate = 0.15
-volatility = 0.6
+put or call = 'c', stock price = 75.15, strike = 80, years to maturity = 0.15, risk free rate = 0.15, volatility = 0.6
 
     >> option = black_scholes('c', 75.15, 80, 0.15, 0.25, 0.6)
 
