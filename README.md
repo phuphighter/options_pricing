@@ -4,8 +4,8 @@ Module for financial options pricing models in Ruby.  Right now, only supports [
 
 ## Installation
 
-Just require it and include the module:
-    require 'options_pricing'
+Just require it and include the module:    
+    require 'options_pricing'    
     include OptionsPricing
 
 Or in your Rails app as a plugin:
@@ -16,10 +16,11 @@ Or in your Rails app as a plugin:
     
 #### Examples
 
-put or call = 'c', stock price = 75.15, strike = 80, years to maturity = 0.15, risk free rate = 0.15, volatility = 0.6
+    put or call = 'c', stock price = 75.15, strike = 80, years to maturity = 0.15, risk free rate = 0.15, volatility = 0.6
 
-Returns an object: 
-    >> option = black_scholes('c', 75.15, 80, 0.15, 0.25, 0.6)   
+Returns an object:    
+
+    >> option = black_scholes('c', 75.15, 80, 0.15, 0.25, 0.6)    
     => <#Hashie::Mash call_put="c" d1=0.00843226590435667 d2=-0.223946734868088 risk_free_rate=0.25 stock_price=75.15 strike=80 value=6.12719273880037 volatility=0.6 years_to_maturity=0.15>
 
     >> option.value
